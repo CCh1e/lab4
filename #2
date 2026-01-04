@@ -1,0 +1,8 @@
+print("--- Завдання 2 ---")
+matrix = []
+for i in range(7):
+    row = [1 if i % 2 == 0 else 0 for _ in range(7)]
+    matrix.append(row)
+
+for row in matrix:
+    print(*row)
