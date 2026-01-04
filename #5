@@ -1,0 +1,5 @@
+print("--- Завдання 5 ---")
+text = input("Текст: ")
+unique = set(text)
+res = {char for char in unique if char.isalpha() and text.count(char) >= 2}
+print("Результат:", res)
