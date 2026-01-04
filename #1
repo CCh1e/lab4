@@ -1,0 +1,15 @@
+print("--- Завдання 1 ---")
+try:
+    n = int(input("Введіть кількість елементів N: "))
+    arr = []
+    for i in range(n):
+        arr.append(float(input(f"Елемент {i+1}: ")))
+
+    positives = [x for x in arr if x > 0]
+
+    if positives:
+        print(f"Мінімальний додатний елемент: {min(positives)}")
+    else:
+        print("Немає додатних чисел.")
+except ValueError:
+    print("Помилка введення.")
