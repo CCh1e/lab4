@@ -1,0 +1,8 @@
+print("--- Завдання 3 ---")
+original = input("Список: ").split()
+val = input("Вставка: ")
+res = []
+for item in original:
+    res.append(val)
+    res.append(item)
+print("Результат:", res)
